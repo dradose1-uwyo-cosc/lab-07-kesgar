@@ -1,12 +1,10 @@
-# Your Name Here
+# Kaylee Esgar
 # UWYO COSC 1010
-# Submission Date
-# Lab XX
-# Lab Section: 
-# Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# 10-29-24
+# Lab 07
+# Lab Section: 10
+# Sources, people worked with, help given to: Ashley Criger
+
 
 
 # Prompt the user for an upper bound 
@@ -18,6 +16,18 @@
 # You will continue to prompt the user until a proper integer value is entered
 
 factorial = 1
+numbers = ""
+
+while True:
+    user_input = input("Enter an upper bound")
+    if user_input.isdigit():
+        numbers = int(user_input)
+        if numbers > 0:
+            for value in range(1,numbers+1):
+              factorial *= value #using the *= operator to multiply the number with the value on the right of it. Since it is in a loop this iteraters for the range specified.
+            break
+    else:
+         print("Please try a new value, your previous value is invalid")
 
 print(f"The result of the factorial based on the given bound is {factorial}")
 
@@ -38,6 +48,21 @@ print("*"*75)
 # The sum should start at 0 
 
 num_sum = 0 
+
+while True:
+    user_input2 = input("Please input an integer")
+    if user_input2.lstrip("-").isdigit():
+        numbers1 = int(user_input2)
+        num_sum = num_sum + numbers1
+    if user_input2 == "exit":
+        user_input2.upper
+        break
+        
+
+
+
+
+
 
 print(f"Your final sum is {num_sum}")
 
