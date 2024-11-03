@@ -84,4 +84,27 @@ print("*"*75)
 # Print the result of the equation
 # Again, loop through prompting the user for input until `exit` in any casing is input 
 
-        
+repeat = True
+while repeat:
+    inp = input("Please enter an equation. If you need to exit, type 'exit'")
+    inp = inp.replace(" ","")
+    if inp.lower() == 'exit'
+        break
+    else:
+        if "+" in inp:
+            operands = inp.split("+"):
+            operator = "+"
+        elif "*" in inp.split("*"):
+            operands = inp.split("*")
+            operator = "*"
+        elif "-" in inp.split("-"):
+            operands = inp.split("-")
+            operator = "-"
+        elif "/" in inp.split("/"):
+            operands = inp.split("/")
+            operator = "/"
+        elif "%" in inp.split("%"):
+            operands = inp.split("%")
+            operator = "%"
+        else:
+            print("Your input was invalid. Please ensure the input uses valid operators.")
